@@ -7,12 +7,17 @@
 body
 {
     background-color: black;
-    /* background-image: url("macbook_3-wallpaper-5120x3200.jpg");
-    background-size: cover;
-    background-repeat: no-repeat; */
-    overflow: hidden;
-    overflow: -moz-hidden-unscrollable;
+    background-image: url("macbook_3-wallpaper-5120x3200.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    text-rendering: optimizeLegibility;
     position: relative;
+    position: fixed; 
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
 }   
 
 .logo{
@@ -26,7 +31,7 @@ nav{
     justify-content: space-between;
     display: flex;
     padding: 10px;
-    padding-right: 100px;
+    padding-right: 5%;
     background: rgba(105, 105, 105, 0.25);
     backdrop-filter: blur( 8px );
     -webkit-backdrop-filter: blur( 4px );
@@ -45,7 +50,8 @@ nav{
 
 .t-ul{
     transform: translateX(0) !important;
-    transition: 0.5s transform;
+    transition: 0.3s transform;
+
 }
 
 .ul{
@@ -54,13 +60,14 @@ nav{
     height: 100vh;
     position: absolute;
     transform: translateX(100%);
-    transition: 0.5s transform;
+    transition: 0.3s transform;
     background: rgba(105, 105, 105, 0.25);
     backdrop-filter: blur( 8px );
     -webkit-backdrop-filter: blur( 4px );
 }
 
 li{
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     padding: 20px 100px;
