@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: black;
+    /* background-image: url("macbook_3-wallpaper-5120x3200.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+    position: relative;
+}   
+
+.logo{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+nav{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
+    padding-right: 100px;
+    background: rgba(105, 105, 105, 0.25);
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+.burger{
+    width: 50px;
+}
+
+.burger span{
+    height: 4px;
+    margin: 7px 0;
+    display: block;
+    background-color: yellow;
+}
+
+.t-ul{
+    transform: translateX(0) !important;
+    transition: 0.5s transform;
+}
+
+.ul{
+    top:81px;
+    right: 0;
+    height: 100vh;
+    position: absolute;
+    transform: translateX(100%);
+    transition: 0.5s transform;
+    background: rgba(105, 105, 105, 0.25);
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 20px 100px;
+    color: white;
+    list-style: none;
+    
+}
